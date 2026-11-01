@@ -1,0 +1,146 @@
+
+/* Importing custom fonts */
+@import url('https://fonts.cdnfonts.com/css/death-note-font');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+
+/* Style all text using the Typewrite class */
+.Typewrite {
+   font-family: 'EB Garamond', serif;
+    color:white
+}
+
+/* Give major headings the gothic Death Note look */
+h2.Typewrite,
+h1.Typewrite,
+h3.Typewrite
+ { 
+    font-family: 'Death Note Font', sans-serif;
+    color:white;    
+    }
+
+    /* Main website background */
+body {
+    background-color: black;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+   font-family: 'EB Garamond', serif;
+}
+
+/* Main content area */
+main {
+    background-color: #000000;
+    color: #ffffff;
+    min-height:auto;
+}
+
+/* Logo "Codenote" Home Button Styling */
+.logo-home {
+display:inline-flex;
+align-items:center;
+justify-content:center;
+text-decoration:none;
+}
+
+/* Logo "Codenote" Home Button Image File */
+.logo-home img{
+width: 55px;
+height: 55px;
+object-fit:contain;
+display:block;
+transition: transform 0.2s ease;
+}
+
+/* Logo "Codenote" Home Button Hover Effect */
+.logo-home:hover img {
+    transform: scale(1.08);
+}
+
+/* Navigation Bar Styling */
+nav{
+    display:flex;
+    flex-direction:row;
+    gap:20px;
+}
+
+/* Site Header Styling */
+.site-header{
+    display:grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items:center;
+    gap:20px;
+    padding: 20px 40px;
+    border: 2px solid #555555;
+}
+
+/* Logo "Codenote" Home Button Positioning */
+.logo-home {
+    justify-self: start;
+}
+
+/* Brand Text Positioning */
+.brand-text {
+    text-align: center;
+}
+
+/* Site Header Navigation Positioning */
+.site-header nav {
+    justify-self: end;
+}
+
+/* Welcome Section Styling */
+#Welcome{
+    text-align:center;
+    padding:30px 20px;
+    margin:20px 60px;
+    border: 2px solid #555555;
+
+}
+
+/* Kira GIF Container Styling */
+.Kira-gif {
+    display:block;
+    margin:25px auto;
+    padding:8px;
+    border: 2px solid #555555; 
+}
+
+/* Site Header Navigation Link Styling */
+.site-header nav a {
+    transition: color 0.2s ease;
+}
+
+/* Site Header Navigation Link Hover Effect */
+.site-header nav a:hover {
+    color:#9b1c31;
+}
+
+/* Footer Styling */
+footer {
+    text-align:center;
+    padding:25px 20px;;
+    border-top: 1px solid #555555;
+    margin-top: 40px;
+}
+
+/* Footer Link Styling */
+footer a {
+    text-decoration:none;
+    transition: color 0.2s ease;
+}
+
+/* Footer Link Hover Effect */
+footer a:hover {
+    color:#6f9b82;
+}
+
+/* Footer Paragraph Styling */
+footer p {
+    font-size: 14px;
+}
+
+
+
+
+
+
