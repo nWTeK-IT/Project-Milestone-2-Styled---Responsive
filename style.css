@@ -139,6 +139,12 @@ footer p {
     font-size: 14px;
 }
 
+@media (max-width: 600px) {
+    site-header {
+       grind-template-columns: 1fr;
+    }
+
+}
 
 
 
