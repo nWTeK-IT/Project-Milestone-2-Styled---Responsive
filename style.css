@@ -158,7 +158,14 @@ footer p {
     #Welcome {
         margin: 20px 10px;
     }
+
+    .Kira-gif {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 }
+
 
 
 
