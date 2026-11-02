@@ -1,5 +1,5 @@
-# Homework-2-Styling-Your-Page
-Homework 2 – Styling Your Page
+# Project-Milestone-2-Styled---Responsive
+Project-Milestone-2-Styled---Responsive
 
 Project: CODENOTE
 
