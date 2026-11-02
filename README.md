@@ -1,169 +1,354 @@
-# Project-Milestone-2-Styled---Responsive
-Project-Milestone-2-Styled---Responsive
+# The Codenote
+## Project Milestone 2 — Styled & Responsive
 
-Project: CODENOTE
+**Developer:** Jason Marsden  
+**Project:** The Codenote — Personal Portfolio Website  
+**Course:** Web Development  
+**Date:** November 1, 2026  
+**Technologies:** HTML5, CSS3, Git, GitHub, GitHub Pages
 
-Course: Web Development
-Assignment:Project-Milestone-2-Styled---Responsive
-Created by: NWTek
+---
 
-Project Description
+## Project Overview
 
-CODENOTE is a personal portfolio website inspired by the anime Death Note. The website is designed to showcase my journey as an Information Technology student at Campus.edu, including my background, projects, and future career goals.
+The Codenote is a personal portfolio website created to
+showcase my journey as an Information Technology student
+at Campus.edu.
 
-For Homework 2, I focused on improving the appearance of my original HTML webpage using CSS. My goal was to create a dark, gothic-themed website while learning how to use CSS selectors, fonts, colors, layouts, and the box model.
+The website features a Death Note-inspired design,
+combining custom typography, dark colors, animations,
+and responsive layouts.
 
-HTML Structure and Updates
+Project Milestone 2 focuses on improving the website's
+visual appearance, CSS styling, and responsiveness
+across desktop, tablet, and mobile devices.
 
-The website uses semantic HTML elements to organize its content.
+---
 
-Header: Contains the CODENOTE logo, website title, subtitle, and navigation links.
+## Project Objectives
 
-Navigation: Includes Home, About, and Projects links.
+The primary objectives of Project Milestone 2 were to:
 
-Main: Contains the welcome message, personal introduction, and an animated GIF of Light Yagami.
+- Implement an external CSS stylesheet.
+- Establish a consistent visual design.
+- Apply custom fonts and typography.
+- Improve spacing and page organization.
+- Use CSS Grid and Flexbox for layout management.
+- Implement responsive design using media queries.
+- Ensure compatibility with mobile, tablet, and desktop screens.
+- Test the website using browser Developer Tools.
+- Publish and maintain the website through GitHub Pages.
 
-Sections: Separate the welcome message, animation, and other content.
+---
 
-Footer: Contains a LinkedIn link labeled "Job Opportunities?" and a copyright notice.
+## Website Structure
 
+The website consists of three primary HTML pages:
 
-I also added classes and an ID to the HTML elements so they could be styled individually through CSS.
+### Home — index.html
 
-The index.html file links to the external style.css stylesheet.
+The homepage introduces The Codenote and includes:
 
+- Website logo and branding.
+- Navigation menu.
+- Welcome message.
+- Animated Kira GIF.
+- Introduction to my IT education and career goals.
+- Footer containing copyright information and a LinkedIn link.
 
-CSS Styling Changes
+### About — about.html
 
-1. External Stylesheet
+The About page provides information about my background,
+education, and interests in Information Technology.
 
-I created a separate style.css file to control the appearance of the website without placing the styling directly inside the HTML elements.
+### Projects — projects.html
 
-2. CSS Selectors
+The Projects page is dedicated to showcasing my
+development projects and technical accomplishments.
 
-I practiced using three different CSS selector types:
+---
 
-Type selectors: body, main, nav, and footer
+## Development Log — November 1, 2026
 
-Class selectors: .Typewrite, .site-header, .logo-home, .brand-text, and .Kira-gif
+### 1. Responsive Header Improvements
 
-ID selector: #Welcome
+Modified the website's header styling to improve
+its appearance on smaller screens.
 
-These selectors allow different parts of the website to have their own styling.
+Changes included:
 
-3. Fonts and Typography
+- Adjusting header padding.
+- Improving CSS Grid positioning.
+- Correcting mobile layout alignment.
+- Preventing content from extending beyond the screen.
+- Improving the placement of the website logo.
 
-I added two fonts to match the website's theme:
+### 2. Mobile Layout Adjustments
 
-Death Note Font: Used for major headings to create a gothic appearance.
+Implemented and refined a mobile media query targeting
+screens 600 pixels wide or smaller.
 
-EB Garamond: Used for supporting text and other content to improve readability.
+The mobile layout adjusts the header, navigation,
+logo positioning, and other page elements to fit
+smaller displays.
 
-4. Colors
-   
+Example:
 
-I chose a dark color scheme inspired by Death Note.
+    @media (max-width: 600px) {
+        /* Mobile-specific styling */
+    }
 
-Black (#000000) for the background
+### 3. Responsive GIF Improvements
 
-White (#ffffff) for the text
+Identified an issue where the animated Kira GIF
+was wider than the mobile screen.
 
-Gray (#555555) for borders
+This caused horizontal scrolling and affected
+the appearance of other page elements.
 
-Crimson (#9b1c31) for navigation hover effects
+Corrected the issue using responsive CSS:
 
-Muted green (#6f9b82) for the LinkedIn hover effect
+    .Kira-gif {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
 
-The crimson and green accents provide complementary colors while maintaining the dark appearance of the website.
+These properties allow the GIF to scale according
+to its available space while maintaining its
+original proportions.
 
+### 4. Mobile Logo Alignment
 
-5. CSS Box Model
+Adjusted the Codenote logo to appear centered
+above the website title on mobile screens.
 
-I practiced using margins, padding, and borders on multiple elements.
+Used the following CSS property:
 
-Header: Added padding and a gray border.
+    justify-self: center;
 
-Welcome section: Added margins, padding, and a gray border.
+This improved the visual alignment of the
+mobile header.
 
-Animated GIF: Added margins, padding, and a gray border.
+### 5. Tablet Media Query
 
-Footer: Added padding, a top border, and spacing above it.
+Added a second media query targeting screen
+widths between 601 and 900 pixels.
 
-This helped me understand how spacing and borders affect the placement of elements on a webpage.
+    @media (min-width: 601px) and (max-width: 900px) {
+        .site-header {
+            padding: 16px 24px;
+        }
+    }
 
+This provides tablet-specific header spacing
+without requiring a complete redesign.
 
-6. Header and Navigation Layout
+### 6. Browser Cache Troubleshooting
 
-I used CSS Grid to organize the header into three columns:
+Encountered an issue where the published website
+displayed an outdated logo position on a mobile device.
 
-Logo on the left
+The local Live Server preview displayed the
+correct positioning.
 
-Website title in the center
+After testing the website using a mobile browser's
+incognito mode, the correct layout appeared.
 
-Navigation links on the right
+This helped identify browser caching as the
+cause of the inconsistent appearance.
 
-I also used Flexbox to arrange the navigation links horizontally with spacing between them.
+### 7. Live Server Installation
 
+Installed the Live Server extension in
+Visual Studio Code.
 
-7. Hover Effects and Transitions
+Live Server provides a local development
+environment that automatically refreshes
+the webpage when changes are saved.
 
-I added interactive styling to make the website feel more responsive to user actions.
+This improved the development workflow by
+reducing the need to repeatedly commit changes
+and wait for GitHub Pages deployment.
 
-The CODENOTE logo grows slightly when hovered over.
+### 8. Responsive Design Testing
 
-Navigation links turn crimson when hovered over.
+Tested the website using Chrome Developer Tools
+and responsive device emulation.
 
-The LinkedIn link turns muted green when hovered over.
+The following screen widths were tested:
 
-CSS transitions make the color and size changes appear smoother.
+| Device | Screen Width | Result |
+|--------|--------------|--------|
+| Mobile | 320px | Passed |
+| Tablet | 768px | Passed |
+| Desktop | 1200px | Passed |
 
-I also removed the underline from the LinkedIn link for a cleaner appearance.
+All three screen widths displayed correctly
+during testing.
 
+The tablet layout was tested again after
+adding the second media query.
 
-8. Footer Styling
+No additional layout problems were reported.
 
-I centered the footer content, added spacing, created a gray top border, and adjusted the copyright text size.
+---
 
+## Responsive Design Implementation
 
-Assignment Requirements
+The website uses three responsive screen ranges.
 
-Separate CSS file linked in the HTML <head>
+### Desktop — 901px and Above
 
-Type, class, and ID selectors
+The desktop layout uses the default CSS styling.
 
-CSS box model demonstrated on at least three elements
+No separate desktop media query is required
+because the original CSS rules apply automatically.
 
-Complementary accent colors included in the color scheme
+### Tablet — 601px to 900px
 
-Intentionally styled webpage with a consistent theme
+A tablet-specific media query adjusts header
+padding while retaining the existing layout.
 
+### Mobile — 600px and Below
 
-Files
+The mobile media query adjusts the website
+layout for smaller screens.
 
-index.html – Main HTML webpage
+These changes include responsive images,
+header adjustments, and logo alignment.
 
-style.css – External CSS stylesheet
+---
 
-images/Codenote.png – Website logo
+## Tools and Technologies
 
+### HTML5
 
-Future Improvements
+Used to structure the website's content,
+navigation, sections, and footer.
 
-After completing this assignment, I plan to continue developing CODENOTE by:
+### CSS3
 
-Improving the layout for mobile devices
+Used for visual styling, typography,
+spacing, responsive images, and layout.
 
-Adding decorative elements inspired by the Death Note notebook cover
+### CSS Grid and Flexbox
 
-Improving the LinkedIn and contact buttons
+Used to organize page elements and manage
+responsive layouts.
 
-Expanding the About and Projects pages
+### Media Queries
 
-Continuing to improve the website's appearance and functionality
+Used to apply different styling rules
+depending on browser width.
 
+### Visual Studio Code
 
-What I Learned
+Used as the primary development environment.
 
-This assignment helped me better understand how HTML and CSS work together. I learned how to target elements with different selectors, adjust spacing using the box model, organize content using Grid and Flexbox, and add hover effects and transitions.
+### Live Server
 
-I also learned that small changes to fonts, colors, spacing, and borders can make a website look very different from its original HTML structure.
+Used to preview changes locally and
+automatically refresh the website.
+
+### Chrome Developer Tools
+
+Used to inspect elements, troubleshoot CSS,
+and test responsive screen sizes.
+
+### Git and GitHub
+
+Used for version control and maintaining
+the project's source code.
+
+### GitHub Pages
+
+Used to publish the website online.
+
+---
+
+## Challenges and Solutions
+
+### Challenge: Mobile Content Overflow
+
+**Problem:**
+Some website elements extended beyond the
+mobile screen, creating horizontal scrolling.
+
+**Solution:**
+Adjusted responsive CSS properties and
+corrected the oversized animated GIF.
+
+### Challenge: Logo Alignment
+
+**Problem:**
+The website logo appeared incorrectly positioned
+on mobile devices.
+
+**Solution:**
+Adjusted the logo's CSS alignment and verified
+its appearance using responsive testing.
+
+### Challenge: Inconsistent Published Appearance
+
+**Problem:**
+The local website displayed correctly while
+the mobile browser showed outdated styling.
+
+**Solution:**
+Tested the published website in incognito mode
+and identified browser caching as the issue.
+
+### Challenge: Slow Development Workflow
+
+**Problem:**
+Repeatedly waiting for GitHub Pages deployment
+made testing small CSS changes time-consuming.
+
+**Solution:**
+Installed Live Server to preview changes
+immediately after saving files.
+
+---
+
+## Testing Results
+
+Responsive testing confirmed that the website
+displayed correctly at the three required
+screen widths.
+
+- Mobile: 320 pixels
+- Tablet: 768 pixels
+- Desktop: 1200 pixels
+
+The website uses two CSS media queries
+alongside its default desktop styling.
+
+---
+
+## Conclusion
+
+Project Milestone 2 focused on transforming
+The Codenote into a styled and responsive
+personal portfolio website.
+
+Throughout development, I improved my
+understanding of CSS, media queries,
+responsive images, browser Developer Tools,
+and GitHub Pages deployment.
+
+I also learned how browser caching can
+affect the appearance of published websites
+and how Live Server can improve the
+development and testing process.
+
+The website has been tested successfully
+at mobile, tablet, and desktop screen widths.
+
+These improvements establish a foundation
+for future development of The Codenote.
+
+---
+
+**Developed by Jason Marsden**  
+**November 1, 2026**
