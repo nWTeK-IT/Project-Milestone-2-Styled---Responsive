@@ -164,6 +164,10 @@ footer p {
         max-width: 100%;
         height: auto;
     }
+
+    .logo-home {
+        justify-self: center;
+    }
 }
 
 
