@@ -142,6 +142,7 @@ footer p {
 @media (max-width:600px) {
     .site-header {
        grid-template-columns: 1fr;
+       padding: 15px 10px;
     }
 
     .site-header nav {
