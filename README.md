@@ -4,7 +4,7 @@ Project-Milestone-2-Styled---Responsive
 Project: CODENOTE
 
 Course: Web Development
-Assignment: Homework 2 – Styling Your Page
+Assignment:Project-Milestone-2-Styled---Responsive
 Created by: NWTek
 
 Project Description
