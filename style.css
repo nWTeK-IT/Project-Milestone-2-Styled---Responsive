@@ -168,7 +168,16 @@ footer p {
     .logo-home {
         justify-self: center;
     }
+
 }
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .site-header {
+        padding: 16px 24px;
+    }
+}
+
+
 
 
 
